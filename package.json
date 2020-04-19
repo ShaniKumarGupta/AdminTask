@@ -1,0 +1,19 @@
+{
+  "name": "admintask",
+  "version": "1.0.0",
+  "description": "Algoscale Task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaniKumarGupta/AdminTask.git"
+  },
+  "author": "Shani Kumar Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShaniKumarGupta/AdminTask/issues"
+  },
+  "homepage": "https://github.com/ShaniKumarGupta/AdminTask#readme"
+}
