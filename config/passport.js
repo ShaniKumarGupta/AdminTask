@@ -6,9 +6,9 @@ const JwtStrategy = require('passport-jwt').Strategy;
  module.exports = function(passport) {
   let opts = {};
   opts.jwtFromRequest=ExtractJwt.fromAuthHeaderWithScheme('jwt');
-  opts.secretOrKey = "opensesame";
+  opts.secretOrKey = config.secret;
   passport.use(new JwtStrategy(opts, function(jwt_payload, done) {
-   User.getUserById(jwt_payload.data._id, function(err, user){
+   User.getUserById(jwt_payload._id, function(err, user){
     if(err) {
      return done(err, false);
     }
