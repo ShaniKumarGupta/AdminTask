@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/admin-front",
+            "outputPath": "../public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "admin-front"
+    }
+  },
+  "defaultProject": "admin-front",
+  "cli": {
+    "analytics": "77a6a12c-d362-4b33-9424-5dcf772a27e1"
+  }
 }
