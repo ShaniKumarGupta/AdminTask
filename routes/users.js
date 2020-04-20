@@ -4,6 +4,7 @@ const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const config = require('../config/database');
 const User = require('../models/user');
+const AllUser = require('../models/getuser');
 
 // Register
 router.post('/register', (req, res, next) => {
@@ -19,6 +20,18 @@ router.post('/register', (req, res, next) => {
       res.json({success: false, msg:'Failed to register user'});
     } else {
       res.json({success: true, msg:'User registered'});
+    }
+  });
+});
+
+//dashboard
+router.get('/dashboard', function(req, res){
+  console.log('all');
+  User.find({}).exec(function(err, users){
+    if(err){
+      console.log("Error retrieving Users");
+    } else {
+      res.json(users);
     }
   });
 });
