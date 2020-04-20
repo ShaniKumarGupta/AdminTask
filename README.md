@@ -1,2 +1,2 @@
-# AdminTask
-Algoscale Task Using MEAN Stack
+# Algoscale Task Using MEAN Stack
+
